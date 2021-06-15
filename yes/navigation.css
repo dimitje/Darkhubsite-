@@ -1,0 +1,204 @@
+/* header */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: #343A40;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #9A9DA0;
+}
+
+.header p {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #9A9DA0;
+    cursor: pointer;
+}
+
+.menu li a:hover {
+    color: #c4c4c4;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #9A9DA0;
+}
+
+.header .logo:hover {
+    color: #c4c4c4;
+}
+
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    padding-right: 10px;
+}
+
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+    top: -5px;
+}
+
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+/* Dropdown button */
+
+.dropdown .dropbtn {
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+
+/* Add a red background color to navbar links on hover */
+
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+    padding-top: 0;
+    padding-left: 0;
+    display: none;
+    position: absolute;
+    background-color: #343a4025;
+}
+
+
+/* Links inside the dropdown */
+
+
+/* Add a grey background color to dropdown links on hover */
+
+.dropdown-content a:hover {
+    color: #c4c4c4;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 49em) {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 49em) {
+    .dropdown {
+        display: none;
+    }
+}

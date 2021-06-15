@@ -1,0 +1,29 @@
+.weaponry {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.weaponryclose {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#weaponrylogo {
+    position: absolute;
+    width: 80px;
+    display: flex;
+    justify-content: left;
+    border-radius: 50%;
+}

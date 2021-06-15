@@ -1,0 +1,28 @@
+.Oof {
+    height: 400px;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 225px;
+    font-family: '
+
+}
+
+.ButtonScript {
+    background-color: #343A40;
+    color: #9A9DA0;
+    cursor: pointer;
+    border-radius: 35px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-top: 30px;
+}
+
+.ButtonScript p {
+    font-size: 20px;
+}
+
+.ButtonScript:hover {
+    color: #c4c4c4;
+}

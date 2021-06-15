@@ -1,0 +1,8 @@
+/* body {
+    background-image: url("https://cdn.discordapp.com/attachments/839263066650443817/850112051199213588/Webp.net-gifmaker.gif")
+} */
+
+body {
+    background-image: linear-gradient(#343A40, rgba(51, 51, 51, 0.616), rgba(255, 255, 255, 0.377));
+    background-repeat: no-repeat;
+}
